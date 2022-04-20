@@ -12,6 +12,9 @@ const Cart = ({cart}) => {
         total= total+product.price;
         shipping = shipping + product.shipping;
     }
+    let tax = total * 0.1;
+    let taxt = parseFloat(tax.toFixed(2));
+    const gtotal = total+shipping+tax;
     console.log(cart);
     return (
         <div>
@@ -20,7 +23,8 @@ const Cart = ({cart}) => {
                         <h5>Selected item : {cart.length}</h5>
                         <h5>Total price: ${total}</h5>
                         <h5>Shipping charge: ${shipping}</h5>
-                        <h5>Total Tax: $</h5>
+                        <h5>Total Tax: $ {taxt}</h5>
+                        <h5>Total: ${gtotal}</h5>
                         <button className='delete-btn'>
                             Clear Cart
                             <span className='icon'>
