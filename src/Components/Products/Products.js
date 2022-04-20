@@ -6,7 +6,7 @@ import './Products.css'
 const Products = (props) => {
     const {name, img, seller, ratings,price} = props.product
     return (
-        <div>
+        <div className='p'>
             <div className='product'>
             <img src={img} alt="..." style={{width: 286, height: 286}}
             />

@@ -9,13 +9,7 @@
     grid-template-columns: repeat(3, 1fr);
     
 }
-.order-container{
-    background-color: aqua;
-    position: fixed;
-    height: 50%;
-    width: 100%;
-    padding: 10px;
-}
+
 .delete-btn{
     width: 16%;
     margin-bottom: 10px;
@@ -32,12 +26,12 @@
  .review-btn:hover{
     background-color: orange;
     color: aliceblue;
-    font-size: larger;
+    font-size: large;
     font-weight: 700;
 }
 .delete-btn:hover{
     background-color: red;
     color: aliceblue;
-    font-size: larger;
+    font-size: large;
     font-weight: 700;
 }
